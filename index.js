@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Routes
-app.use('/api/exercise', router);
+app.use('/api/', router);
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html')
 });

@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
         len: 4,
         base: 62
     },
-    name: String,
+    username: String,
     exercises: [
         {
             type: mongoose.Schema.Types.ObjectId,

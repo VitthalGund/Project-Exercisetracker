@@ -5,7 +5,7 @@ const moment = require('moment');
 const addExercise = function (req, res) {
     // Dates are coming in in this format = 'YYYY-MM-DD';
     let { userId, description, duration, date } = req.body;
-    console.log('description:', description, ' - duration: ', duration, ' - date: ', date);
+    // console.log('description:', description, ' - duration: ', duration, ' - date: ', date);
     if (!description) description = 'No description provided';
     if (!duration) duration = '0';
     if (!date) date = moment();
